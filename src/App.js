@@ -20,7 +20,8 @@ export default class App extends React.Component {
 
   getScores=()=> {
     this.setState({
-      loading: true
+      loading: true,
+      searched: false
     })
     axios.get('http://localhost:5000/wordscores?page=' + this.state.page)
           .then((response)=> {
@@ -33,7 +34,8 @@ export default class App extends React.Component {
           .catch((error)=> {
             this.setState({
               loading: false
-            })
+            });
+            alert("Unable to connect to backend services");
             console.log(error);
           });
   }
@@ -90,7 +92,7 @@ export default class App extends React.Component {
             <h2>{this.state.page}</h2>
           </div>
           <div className="price">
-              <h4>$xxx.xx</h4>
+              <h4>$123.45</h4>
           </div>
           <div className="GREENRATE"> 
             <h5>Go Green Rating</h5>

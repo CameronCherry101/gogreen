@@ -222,7 +222,6 @@ h5 {
 .approval_dynamic{
   position: absolute;
   height: 8px;
-  width: 382px;
   left: 460px;
   top: 325px;
   background-color: #50C878;
@@ -241,7 +240,6 @@ h5 {
 .disapproval_dynamic{
   position: absolute;
   height: 8px;
-  width: 313px;
   left: 460px;
   top: 425px;
   background-color: #C04400;

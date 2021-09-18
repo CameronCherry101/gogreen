@@ -36,3 +36,247 @@
     transform: rotate(360deg);
   }
 }
+
+*{  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 100px;
+  background:rgb(255, 255, 255);
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+
+}
+
+nav{
+  position: absolute;
+  line-height: auto;
+  top: 35px;
+  right: 30px;
+}
+
+nav a{
+  text-decoration: none;
+  font-family: poppins;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: rgb(0, 0, 0);
+}
+
+
+.logo{ 
+ position: absolute;
+ z-index: 13;
+ top: 12px;
+ left: 16px;
+}
+
+.wrapper{
+  min-width:100px;
+  margin: 0 auto;
+}
+
+.searchbar {
+  position: fixed;
+  margin: 0 auto;
+  width: 75%;
+  top: 35px;
+}
+
+.button {
+  position: fixed;
+  left: 440px;
+  top: 35px;
+  z-index: 14;
+}
+
+.sect1 {
+  height: 800px;
+  width: 800px;
+  top: 200px;
+  right: -40px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50px;
+  box-shadow: 0 0 30px #333;
+  z-index: -1;
+}
+
+.about {
+  position: absolute;
+  font-family: poppins;
+  color:rgb(255, 255, 255);
+  width: 100%;
+  top: 25px;
+}
+
+.STOCK {
+  height: 800px;
+  width: 1100px;
+  top: 200px;
+  left: -40px;
+  position: absolute;
+  z-index: -1;
+}
+.name {
+  position: absolute;
+  font-family: poppins;
+  color:rgb(0, 0, 0);
+  left: 150px;
+}
+
+h2, h3 {display:inline;}
+
+h2 {
+  font-size: 65px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+body{
+  text-align: center;
+}
+
+.price {
+  position: absolute;
+  font-family: poppins;
+  font-size: 45px;
+  color:rgb(0, 0, 0);
+  left: 155px;
+  top: 70px;
+}
+
+h5 {
+  position: absolute;
+  font-family: poppins;
+  font-size: 45px;
+  color:rgb(0, 0, 0);
+  left: 155px;
+  top: 160px;
+}
+
+.underline {
+  position: absolute;
+  top: 225px;
+  left: 155px;
+  height: 5px;
+  width: 1000px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 200px;
+}
+
+.approvalbox {
+  position: absolute;
+  top: 280px;
+  left: 155px;
+  height: 200px;
+  width: 200px;
+  background-color: #50C878;
+  border-radius: 10%;
+  box-shadow: 0 0 30px #333;
+}
+
+.disapprovalbox {
+  position: absolute;
+  top: 280px;
+  left: 155px;
+  height: 200px;
+  width: 200px;
+  background-color: #C04400;
+  border-radius: 10%;
+  box-shadow: 0 0 30px #333;
+}
+
+.percentscore {
+  position: absolute;
+  font-family: poppins;
+  font-size: 75px;
+  width: 100%;
+  top: 45px;
+  color:rgb(255, 255, 255);
+}
+
+.ratename {
+  position: absolute;
+  bottom: 50px;
+  width:100%;
+  font-family: poppins;
+  font-size: 45px;
+  color:rgb(255, 255, 255);
+}
+
+.approval_static{
+  position: absolute;
+  height: 8px;
+  width: 695px;
+  left: 460px;
+  top: 325px;
+  background-color: #929597;
+}
+
+.approval_dynamic{
+  position: absolute;
+  height: 8px;
+  width: 382px;
+  left: 460px;
+  top: 325px;
+  background-color: #50C878;
+  z-index: 10;
+}
+
+.disapproval_static{
+  position: absolute;
+  height: 8px;
+  width: 695px;
+  left: 460px;
+  top: 425px;
+  background-color: #929597;
+}
+
+.disapproval_dynamic{
+  position: absolute;
+  height: 8px;
+  width: 313px;
+  left: 460px;
+  top: 425px;
+  background-color: #C04400;
+  z-index: 10;
+}
+
+.thumbsup {
+  position: absolute;
+  top: 285px;
+  left: 375px;
+  filter: drop-shadow(0 0 10px #333);
+}
+
+.thumbsdown {
+  position: absolute;
+  top: 410px;
+  left: 375px;
+  filter: drop-shadow(0 0 10px #333);
+}
+
+.approvalpercentage {
+  position: absolute;
+  top: -13px;
+  left: 366px;
+  font-family: poppins;
+  font-size: 25px;
+  z-index: 11;
+}
+
+.disapprovalpercentage {
+  position: absolute;
+  float: left;
+  top: -13px;
+  left: 297px;
+  font-family: poppins;
+  font-size: 25px;
+  z-index: 11;
+}

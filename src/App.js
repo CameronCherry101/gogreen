@@ -13,7 +13,8 @@ export default class App extends React.Component {
     this.state = {
       page: '',
       searched: false,
-      loading: false
+      loading: false,
+      returnPage:''
     };
 
   }
@@ -28,6 +29,7 @@ export default class App extends React.Component {
             this.setState({
               loading: false,
               searched: true,
+              returnPage: this.state.page,
               ...response.data
             });
           })
@@ -83,13 +85,13 @@ export default class App extends React.Component {
         <div>
           <div className="sect1">
           <div className="about" >
-            <h1>About {this.state.page}</h1>
+            <h1>About {this.state.returnPage}</h1>
           </div>
         </div>
   
         <div className="STOCK">
           <div className="name" >
-            <h2>{this.state.page}</h2>
+            <h2>{this.state.returnPage}</h2>
           </div>
           <div className="price">
               <h4>$123.45</h4>
